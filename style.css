@@ -16,6 +16,7 @@
 
   /* FONT */
 }
+
 /* Style the video: 100% width and height to cover the entire window */
 .mobileLandingVideo {
   position: fixed;
@@ -73,4 +74,25 @@
   .landingTittle {
     font-size: 4em;
   }
+}
+
+
+
+
+
+/* FOOTER */
+
+.footer {
+  margin-top: auto;
+  width: 100%;
+  padding: 3em;
+  background: lightgray;
+  color: #efefef;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer li {
+  list-style-type: none;
+  text-align: start;
 }
