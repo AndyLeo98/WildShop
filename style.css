@@ -91,6 +91,12 @@
   justify-content: space-around;
 }
 
+ul {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
 .footer li {
   list-style-type: none;
   text-align: start;
