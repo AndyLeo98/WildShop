@@ -4,18 +4,74 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "ClashDisplay";
+  src: url(Fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Stardom";
+  src: url(Fonts/Stardom_Complete/Fonts/WEB/fonts/Stardom-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(Fonts/Montserrat_Complete/Fonts/WEB/fonts/Montserrat-Medium.ttf);
+}
+
 :root {
   /* COLOR VARIABLES */
   --primary-color: ;
   --secondary-color: ;
-  --light: ;
-  --dark: #001425;
-
-  /* SPACING */
-  --spacing: ;
+  --light: #f8f7f9;
+  --dark: #091540;
 
   /* FONT */
+  --primary-font: Stardom;
+  --secondary-font: Montserrat;
+  --logo-font: ClashDisplay;
 }
+
+/* NAVBAR */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  min-height: 8vh;
+  background-color: transparent;
+}
+
+.logo a {
+  display: inline-block;
+  font-size: 3rem;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: var(--dark);
+  font-family: var(--logo-font);
+  letter-spacing: 3px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.nav-links li a {
+  display: inline-block;
+  color: var(--dark);
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  padding: 20px 20px;
+  font-size: 1.2rem;
+}
+
 /* VIDEO */
 .mobileLandingVideo {
   position: fixed;
