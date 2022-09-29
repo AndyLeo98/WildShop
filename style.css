@@ -54,10 +54,11 @@
   cursor: pointer;
   margin-bottom: 1vh;
 }
-
-.landingButton:hover {
-  background: #ddd;
+.landingButtonLink {
   color: black;
+}
+.landingButton:hover {
+  box-shadow: 2px 3px 4px 0px #753f5f;
 }
 @media (max-width: 767px) {
   .mobileLandingVideo {
