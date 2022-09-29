@@ -17,6 +17,63 @@
   /* FONT */
 }
 
+/* Style the video: 100% width and height to cover the entire window */
+.mobileLandingVideo {
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Add some content at the bottom of the video/page */
+.landingHeader {
+  position: fixed;
+  top: calc(100% / 2);
+
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 1%;
+  text-align: center;
+}
+.landingTittle {
+  font-size: 5em;
+}
+/* Style the button used to pause/play the video */
+.landingButton {
+  width: 120px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1e2;
+  color: black;
+  cursor: pointer;
+  margin-bottom: 1vh;
+}
+
+.landingButton:hover {
+  background: #ddd;
+  color: black;
+}
+@media (max-width: 767px) {
+  .mobileLandingVideo {
+    display: none;
+  }
+  body {
+    background: url(./media/landingPoster.png);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    height: 100vh;
+  }
+  .landingTittle {
+    font-size: 4em;
+  }
+}
 
 
 
