@@ -16,8 +16,7 @@
 
   /* FONT */
 }
-
-/* Style the video: 100% width and height to cover the entire window */
+/* VIDEO */
 .mobileLandingVideo {
   position: fixed;
   z-index: -1;
@@ -27,12 +26,9 @@
   height: 100vh;
   object-fit: cover;
 }
-
-/* Add some content at the bottom of the video/page */
 .landingHeader {
   position: fixed;
   top: calc(100% / 2);
-
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
@@ -42,7 +38,6 @@
 .landingTittle {
   font-size: 5em;
 }
-/* Style the button used to pause/play the video */
 .landingButton {
   width: 120px;
   font-size: 18px;
@@ -60,12 +55,13 @@
 .landingButton:hover {
   box-shadow: 2px 3px 4px 0px #753f5f;
 }
+/*MEDIA QUERIES FOR THE LANDING PAGE*/
 @media (max-width: 767px) {
   .mobileLandingVideo {
     display: none;
   }
-  body {
-    background: url(./media/landingPoster.png);
+  .landingPageBody {
+    background: url(./media/landingPoster.jpg);
     background-repeat: no-repeat;
     /* background-position: center; */
     background-size: cover;
@@ -75,10 +71,6 @@
     font-size: 4em;
   }
 }
-
-
-
-
 
 /* FOOTER */
 
