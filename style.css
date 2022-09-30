@@ -86,12 +86,12 @@
   font-size: 20px;
   margin-bottom: 10px;
   width: 100%;
-  padding: 10px;
-  background: lightgray;
-  color: #efefef;
+  padding: 15px;
+  background-color: #F2E5D7;
+  color: black;
   display: flex;
   justify-content: space-around;
-  text-align: left;
+  align-items: center;
 }
 
 .footer li {
@@ -103,4 +103,15 @@
 
 i {
   padding: 10px;
-  }
+  color: black;
+}
+
+ .copyright {
+  align-items: center;
+
+ }
+
+ .contactEmail {
+  text-decoration: none;
+  color: black;
+ }
