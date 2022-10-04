@@ -255,3 +255,23 @@ i {
   text-decoration: none;
   color: black;
 }
+
+
+/* ABOUT PAGE*/
+
+
+.about-header {
+display: flex;
+flex-direction: column;
+
+}
+  
+
+
+.about-description {
+  display: flex;
+flex-direction: column;
+  
+}
+
+
