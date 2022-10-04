@@ -107,6 +107,7 @@ li {
   text-decoration: none;
   color: inherit;
   font-size: 1.2rem;
+  font-weight: 500;
   font-family: var(--secondary-font);
   letter-spacing: 0.1rem;
 }
@@ -131,6 +132,12 @@ li {
   color: var(--dark);
   font-family: var(--logo-font);
   letter-spacing: 3px;
+  transition: 0.5s ease-out;
+}
+
+.logo a:hover {
+  color: #f1415b;
+  transition: 0.5s ease-in;
 }
 
 /* COVER PAGE IMAGE  */
@@ -147,12 +154,19 @@ li {
 }
 
 .cover h1 {
-  font-size: 3rem;
+  font-size: 1.7rem;
   font-family: var(--primary-font);
   font-weight: 700;
   margin-left: 6.25rem;
+  margin-right: 2rem;
   margin-bottom: 2.5rem;
   line-height: 3.75rem;
+  text-decoration: underline;
+  background-color: var(--light);
+  padding: 0.3em;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .btn {
@@ -166,10 +180,12 @@ li {
   margin-left: 6.25rem;
   border-radius: 30px;
   transition: background 1s;
+  transition: transform 1s;
 }
 
 .btn:hover {
   background: #563434;
+  transform: scale(1.05);
 }
 
 /* MEDIA QUERY FOR DESKTOP */
@@ -185,7 +201,11 @@ li {
     display: block;
   }
   .logo a {
-    font-size: 2rem;
+    font-size: 3rem;
+  }
+  .cover h1 {
+    font-size: 3rem;
+    padding: 0.7rem 3.1rem;
   }
 }
 
