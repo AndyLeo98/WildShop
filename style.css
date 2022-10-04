@@ -226,7 +226,6 @@ li {
 
 .footer {
   font-size: 20px;
-  margin-bottom: 10px;
   width: 100%;
   padding: 15px;
   background-color: #f2e5d7;
@@ -234,6 +233,8 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: fixed;
+  bottom: 0;
 }
 
 .footer li {
@@ -249,9 +250,15 @@ i {
 
 .copyright {
   align-items: center;
-}
-
+  font-size: 18px;
+  }
 .contactEmail {
   text-decoration: none;
   color: black;
+ }
+
+ @media screen and (max-width: 600px) { 
+  .footer { 
+    flex-direction: column; 
+  } 
 }
