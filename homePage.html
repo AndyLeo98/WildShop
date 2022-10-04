@@ -12,46 +12,71 @@
     ></script>
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <a href="homePage.html">WildShop</a>
-      </div>
-    
-    <div class="hamburger toggle">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-    <ul class="nav-links nav-active">
-      <li>
-        <a href="#products">Products</a>
-      </li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#cart">Cart</a></li>
-    </ul>
-  </nav>
-  
-  <section class="landing">
-    <img src="" alt="" />
-    <h1>New Collection 2023!</h1>
-  </section>
-  
-  <footer class="footer">
+    <!-- NAVBAR -->
+    <header class="header">
+      <nav class="nav">
+        <input type="checkbox" id="nav__checkbox" class="nav__checkbox" />
+        <label for="nav__checkbox" class="nav__toggle">
+          <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+            <path
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            />
+          </svg>
+          <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+            <path
+              d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+            />
+          </svg>
+        </label>
 
-    <p><a class="contactEmail" href="mailto:hello@wildshop.com">hello@wildshop.com</a></p>
+        <!-- MENU NAVBAR -->
+        <ul class="nav__menu">
+          <div class="logo">
+            <a href="homePage.html">WildShop</a>
+          </div>
+          <li class="nav__item">
+            <a href="#products" class="nav__link active">Products</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#cart" class="nav__link">Cart</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <ul>
-        
-      <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-        
-      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-        
-      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-      
-    </ul>
+    <!-- HOME PAGE COVER IMAGE -->
+    <section class="landing">
+      <img src="" alt="" />
+      <h1>New Collection 2023!</h1>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>
+        <a class="contactEmail" href="mailto:hello@wildshop.com"
+          >hello@wildshop.com</a
+        >
+      </p>
 
-    <p class="copyright">Copyright 2022 - All rights reserved</p>
+      <ul>
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </li>
 
-  </footer>
+        <li>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+
+        <li>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+      </ul>
+
+      <p class="copyright">Copyright 2022 - All rights reserved</p>
+    </footer>
   </body>
 </html>
+ 
+
