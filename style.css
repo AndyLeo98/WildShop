@@ -133,18 +133,22 @@ li {
 }
 
 /* MEDIA QUERY FOR DESKTOP */
-@media only screen and (min-width: 560px) {
+@media only screen and (min-width: 768px) {
   .nav__toggle {
     display: none;
   }
   .nav__menu {
     flex-direction: row;
+    position: relative;
   }
   li {
     display: block;
   }
   .logo a {
     font-size: 3rem;
+  }
+  .landing h1 {
+    font-size: 2.5rem;
   }
 }
 /* COVER PAGE IMAGE  */
@@ -161,74 +165,6 @@ li {
   font-family: var(--primary-font);
   margin: 100px;
 }
-
-/* MEDIA QUERY NAVBAR */
-@media screen and (max-width: 768px) {
-  .landing {
-    flex-direction: column;
-  }
-  .landing h1 {
-    font-size: 2.5rem;
-  }
-
-  nav {
-    position: relative;
-  }
-
-  body {
-    overflow-x: hidden;
-  }
-
-  .nav-links {
-    position: absolute;
-    right: 0px;
-    height: 90vh;
-    top: 14vh;
-    background-color: #f2e5d7;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-  }
-
-  .nav-links li {
-    /* opacity: 0; */
-    display: initial;
-  }
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-}
-
-.nav-active {
-  transform: translateX(0%);
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-/* .toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-  opacity: 0;
-}
-
-.toggle .line3 {
-  transform: rotate(45deg) translate(-5px, 6px);
-} */
 
 /* VIDEO */
 .mobileLandingVideo {
