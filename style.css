@@ -56,6 +56,7 @@ body {
   background-color: var(--primary-color);
   min-height: 8vh;
   width: 100%;
+  /* position: fixed; */
 }
 
 .nav__toggle {
@@ -132,6 +133,45 @@ li {
   letter-spacing: 3px;
 }
 
+/* COVER PAGE IMAGE  */
+
+.landing {
+  background-image: url("media/pexels-george-shervashidze-1135531-min.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  color: var(--dark);
+}
+
+.cover h1 {
+  font-size: 3rem;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  margin-left: 6.25rem;
+  margin-bottom: 2.5rem;
+  line-height: 3.75rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff523b;
+  color: var(--light);
+  font-size: 1.2rem;
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  padding: 0.7rem 3.1rem;
+  margin-left: 6.25rem;
+  border-radius: 30px;
+  transition: background 1s;
+}
+
+.btn:hover {
+  background: #563434;
+}
+
 /* MEDIA QUERY FOR DESKTOP */
 @media only screen and (min-width: 768px) {
   .nav__toggle {
@@ -145,25 +185,8 @@ li {
     display: block;
   }
   .logo a {
-    font-size: 3rem;
+    font-size: 2rem;
   }
-  .landing h1 {
-    font-size: 2.5rem;
-  }
-}
-/* COVER PAGE IMAGE  */
-
-.landing {
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.landing h1 {
-  font-size: 3.5rem;
-  font-family: var(--primary-font);
-  margin: 100px;
 }
 
 /* VIDEO */
@@ -225,40 +248,43 @@ li {
 /* FOOTER */
 
 .footer {
-  font-size: 20px;
+  font-size: 1rem;
+  font-family: var(--secondary-font);
   width: 100%;
+  min-height: 8vh;
   padding: 15px;
-  background-color: #f2e5d7;
+  background-color: var(--primary-color);
   color: black;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: fixed;
-  bottom: 0;
+  /* position: fixed; */
+  /* bottom: 0; */
 }
 
 .footer li {
   list-style-type: none;
   text-align: center;
-  display: inline;
+  display: inline-block;
 }
 
 i {
   padding: 10px;
-  color: black;
+  color: var(--dark);
+  font-size: 20px;
 }
 
 .copyright {
   align-items: center;
-  font-size: 18px;
-  }
+  font-size: 0.8rem;
+}
 .contactEmail {
   text-decoration: none;
-  color: black;
- }
+  color: var(--dark);
+}
 
- @media screen and (max-width: 600px) { 
-  .footer { 
-    flex-direction: column; 
-  } 
+@media screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+  }
 }
