@@ -227,7 +227,6 @@ nav {
 
 .footer {
   font-size: 20px;
-  margin-bottom: 10px;
   width: 100%;
   padding: 15px;
   background-color: #F2E5D7;
@@ -235,6 +234,8 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: fixed;
+  bottom: 0;
 }
 
 .footer li {
@@ -251,6 +252,7 @@ i {
 
  .copyright {
   align-items: center;
+  font-size: 18px;
 
  }
 
@@ -258,3 +260,9 @@ i {
   text-decoration: none;
   color: black;
  }
+
+ @media screen and (max-width: 600px) { 
+  .footer { 
+    flex-direction: column; 
+  } 
+}
