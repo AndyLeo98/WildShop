@@ -230,7 +230,7 @@ nav {
   margin-bottom: 10px;
   width: 100%;
   padding: 15px;
-  background-color: #F2E5D7;
+  background-color: #f2e5d7;
   color: black;
   display: flex;
   justify-content: space-around;
@@ -240,21 +240,21 @@ nav {
 .footer li {
   list-style-type: none;
   text-align: center;
-  display: inline; 
+  display: inline;
 }
-
 
 i {
   padding: 10px;
   color: black;
 }
 
- .copyright {
+.copyright {
   align-items: center;
+}
 
- }
-
- .contactEmail {
+.contactEmail {
   text-decoration: none;
   color: black;
- }
+}
+
+

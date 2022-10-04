@@ -1,0 +1,31 @@
+.productCards {
+  display: flex;
+  /*width: 100vw;*/
+  flex-direction: column;
+}
+.productCard {
+  display: flex;
+  width: 100%;
+}
+.productImg {
+  height: 100vh;
+  width: 50vw;
+  background-size: cover;
+  background-position: center;
+}
+.productBody {
+  height: 100vh;
+  width: 50vw;
+  padding: 5vw;
+}
+.productTitle {
+  font-size: 9rem;
+  margin-bottom: 0;
+}
+.productPrice {
+  font-size: 5rem;
+  margin-top: 0%;
+}
+.productDescription {
+  font-size: 3rem;
+}
