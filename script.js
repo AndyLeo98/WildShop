@@ -29,8 +29,9 @@ filterSection.appendChild(shoesButton);
 const products = [
   {
     id: 1,
-    image: "https://placekitten.com/200/179",
-    title: "T-shirt rosa",
+    image:
+      "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "T-shirt",
     category: "T-shirts",
     price: "10€",
     description:
@@ -82,7 +83,8 @@ const productCards = document.querySelector(".productCards");
 //Create the function to create the product cards
 function createHomepageProductCards(imageUrl, title, price) {
   //Create the productCard div, add a class and add it to the productCards div
-  const productCard = document.createElement("div");
+  const productCard = document.createElement("a");
+  productCard.href="#"
   productCard.classList.add("productCard");
   productCards.appendChild(productCard);
   //
@@ -90,8 +92,9 @@ function createHomepageProductCards(imageUrl, title, price) {
   productHeader.classList.add("productHeader");
   productCard.appendChild(productHeader);
   //Create de productImg div, add the image as background, add a class and add it to the productHeader div
-  const productImg = document.createElement("div");
-  productImg.style.backgroundImage = `url(${imageUrl})`;
+  /*const productImg = document.createElement("div");*/
+  const productImg = document.createElement("img");
+  productImg.src = `${imageUrl}`;
   productImg.classList.add("productImg");
   productHeader.appendChild(productImg);
   // Create the productBody div and add class to it and add it to the productCard div
@@ -99,20 +102,20 @@ function createHomepageProductCards(imageUrl, title, price) {
   productBody.classList.add("productBody");
   productCard.appendChild(productBody);
   //Create the productTitle h2, add a class and add it to productBody div
-  const productTitle = document.createElement("h2");
+  const productTitle = document.createElement("p");
   productTitle.classList.add("productTitle");
   productTitle.innerHTML = title;
   productBody.appendChild(productTitle);
   //Create the productPrice h3, add a class and add it to productBody div
-  const productPrice = document.createElement("h3");
+  const productPrice = document.createElement("p");
   productPrice.classList.add("productPrice");
   productPrice.innerHTML = price;
   productBody.appendChild(productPrice);
   //Create the shopProduct button, add a class and add it to productBody div
-  const shopProductButton = document.createElement("button");
+  /*const shopProductButton = document.createElement("button");
   shopProductButton.classList.add("shopProductButton");
   shopProductButton.innerHTML = "Shop";
-  productBody.appendChild(shopProductButton);
+  productBody.appendChild(shopProductButton);*/
 }
 
 //Create the loop to call the function

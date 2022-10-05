@@ -12,30 +12,57 @@
   margin: 2em 0;
 }
 .filterButton {
-  background-color: #060807;
-  border-radius: 28px;
-  border: 1px solid #000000;
+  background-color: #f2e5d7;
+  border-radius: 5px;
+  border: 1px solid #f2e5d7;
   cursor: pointer;
-  color: #ffffff;
+  color: black;
   font-size: 12px;
   width: 6em;
   padding: 0.5em;
 }
+.filterButton:hover {
+  background-color: black;
+  color: #f2e5d7;
+  text-decoration: underline;
+  transition: all 0.5s ease-out;
+}
 .productCards {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 5px 20px;
+  margin: 0 1rem;
 }
 .productCard {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 15px;
-  border: 1px solid #f2e5d7;
+  text-decoration: none;
   padding: 10px;
+}
+.productCard:visited {
+  color: #060807;
+}
+.productCard:hover {
+  padding: 10px;
+  border: 1px solid #f2e5d7;
   border-radius: 5px;
+  transition: all 0.5s ease-out;
 }
 .productHeader {
-  margin-bottom: 10px;
+  width: 100%;
+}
+.productImg {
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.productBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .productTitle {
   font-size: 18px;
@@ -45,40 +72,35 @@
   font-size: 12px;
   font-weight: 100;
 }
-.productImg {
-  height: 25vh;
-  width: 33vw;
-  background-size: cover;
-  background-position: center;
-}
-.productBody {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 .shopProductButton {
-  padding: 0.5em;
-  width: 15vw;
   margin-top: 0.5em;
-  background-color: #060807;
-  border-radius: 28px;
-  border: 1px solid #000000;
+  background-color: #f2e5d7;
+  border-radius: 5px;
+  border: 1px solid #f8f7f9;
   cursor: pointer;
-  color: #ffffff;
+  color: #060807;
   font-size: 12px;
-  width: 6em;
+  width: 100%;
   padding: 0.5em;
+}
+.shopProductButton:hover {
+  background-color: #f2e5d7;
+  text-decoration: underline;
+  transition: 0.3s;
 }
 @media screen and (min-width: 1024px) {
   .productCards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 2em;
+    gap: 2em 2.5em;
   }
   .productCard {
     padding: 2em 0;
   }
   .productImg {
-    height: 50vh;
-    width: 25vw;
+    /*height: 50vh;
+    width: 25vw;*/
   }
   .filterButton {
     font-size: 1.15rem;
