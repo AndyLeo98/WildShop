@@ -90,12 +90,15 @@ svg {
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-  /* margin: 1rem; */
   padding: 1rem;
 }
 
 .nav__menu div {
   margin-right: auto;
+}
+
+.nav__menu img {
+  display: none;
 }
 
 li {
@@ -140,6 +143,15 @@ li {
   transition: 0.5s ease-in;
 }
 
+.nav__link {
+  transition: 0.5s ease-out;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+  transition: 0.5s ease-in;
+}
+
 /* COVER PAGE IMAGE  */
 
 .landing {
@@ -149,21 +161,28 @@ li {
   background-size: cover;
   min-height: 90vh;
   display: flex;
+  justify-content: center;
   align-items: center;
   color: var(--dark);
 }
 
+.cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .cover h1 {
-  font-size: 1.7rem;
+  display: inline-block;
+  font-size: 1.5rem;
   font-family: var(--primary-font);
   font-weight: 700;
-  margin-left: 6.25rem;
-  margin-right: 2rem;
-  margin-bottom: 2.5rem;
-  line-height: 3.75rem;
+  margin-bottom: 2rem;
   text-decoration: underline;
   background-color: var(--light);
-  padding: 0.3em;
+  padding: 0.4em;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -171,42 +190,19 @@ li {
 
 .btn {
   display: inline-block;
-  background: #ff523b;
+  background: var(--dark);
+  text-align: center;
   color: var(--light);
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-family: var(--secondary-font);
   text-decoration: none;
-  padding: 0.7rem 3.1rem;
-  margin-left: 6.25rem;
-  border-radius: 30px;
-  transition: background 1s;
-  transition: transform 1s;
+  padding: 1em;
+  transition: background 0.5s;
 }
 
 .btn:hover {
-  background: #563434;
-  transform: scale(1.05);
-}
-
-/* MEDIA QUERY FOR DESKTOP */
-@media only screen and (min-width: 768px) {
-  .nav__toggle {
-    display: none;
-  }
-  .nav__menu {
-    flex-direction: row;
-    position: relative;
-  }
-  li {
-    display: block;
-  }
-  .logo a {
-    font-size: 3rem;
-  }
-  .cover h1 {
-    font-size: 3rem;
-    padding: 0.7rem 3.1rem;
-  }
+  background: var(--primary-color);
+  color: var(--dark);
 }
 
 /* VIDEO */
@@ -249,7 +245,7 @@ li {
   box-shadow: 2px 3px 4px 0px #753f5f;
 }
 /*MEDIA QUERIES FOR THE LANDING PAGE*/
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .mobileLandingVideo {
     display: none;
   }
@@ -271,15 +267,12 @@ li {
   font-size: 1rem;
   font-family: var(--secondary-font);
   width: 100%;
-  min-height: 8vh;
   padding: 15px;
   background-color: var(--primary-color);
   color: black;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* position: fixed; */
-  /* bottom: 0; */
 }
 
 .footer li {
@@ -292,6 +285,12 @@ i {
   padding: 10px;
   color: var(--dark);
   font-size: 20px;
+  transition: 0.5s ease-out;
+}
+
+i:hover {
+  color: #f1415b;
+  transition: 0.5s ease-in;
 }
 
 .copyright {
@@ -301,10 +300,50 @@ i {
 .contactEmail {
   text-decoration: none;
   color: var(--dark);
+  transition: 0.5s ease-out;
 }
 
-@media screen and (max-width: 600px) {
+.contactEmail:hover {
+  color: #f1415b;
+  transition: 0.5s ease-in;
+}
+
+@media screen and (max-width: 768px) {
   .footer {
     flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+/* HOME PAGE MEDIA QUERY FOR DESKTOP */
+@media only screen and (min-width: 768px) {
+  .nav__toggle {
+    display: none;
+  }
+  .nav__menu {
+    flex-direction: row;
+    position: relative;
+  }
+  .nav__menu img {
+    display: block;
+    cursor: pointer;
+  }
+  li {
+    display: block;
+  }
+  .logo a {
+    font-size: 3rem;
+  }
+
+  .cover h1 {
+    margin-left: 6.25rem;
+    margin-right: 2rem;
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
+  }
+
+  .btn {
+    padding: 1.5rem;
+    font-size: 1.2rem;
   }
 }
