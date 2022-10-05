@@ -82,17 +82,16 @@ const products = [
 const productCards = document.querySelector(".productCards");
 //Create the function to create the product cards
 function createHomepageProductCards(imageUrl, title, price) {
-  //Create the productCard div, add a class and add it to the productCards div
+  //Create the productCard link, add a class and add it to the productCards div
   const productCard = document.createElement("a");
-  productCard.href="#"
+  productCard.href = "#";
   productCard.classList.add("productCard");
   productCards.appendChild(productCard);
-  //
+  //Create the image container, add a class and add it to the productCard link
   const productHeader = document.createElement("div");
   productHeader.classList.add("productHeader");
   productCard.appendChild(productHeader);
-  //Create de productImg div, add the image as background, add a class and add it to the productHeader div
-  /*const productImg = document.createElement("div");*/
+  //Create de product image, add a class and add it to the productHeader div
   const productImg = document.createElement("img");
   productImg.src = `${imageUrl}`;
   productImg.classList.add("productImg");
@@ -111,11 +110,6 @@ function createHomepageProductCards(imageUrl, title, price) {
   productPrice.classList.add("productPrice");
   productPrice.innerHTML = price;
   productBody.appendChild(productPrice);
-  //Create the shopProduct button, add a class and add it to productBody div
-  /*const shopProductButton = document.createElement("button");
-  shopProductButton.classList.add("shopProductButton");
-  shopProductButton.innerHTML = "Shop";
-  productBody.appendChild(shopProductButton);*/
 }
 
 //Create the loop to call the function
