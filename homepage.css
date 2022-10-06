@@ -30,21 +30,22 @@ body {
   margin: 1em auto;
 }
 .filterButton {
-  background-color: #f2e5d7;
+  background-color: var(--dark);
   border-radius: 5px;
-  border: 1px solid #f2e5d7;
+  border: 1px solid var(--dark);
   cursor: pointer;
-  color: black;
+  color: var(--light);
   font-size: 12px;
   width: 7em;
   padding: 0.5em;
   font-family: var(--secondary-font);
 }
 .filterButton:hover {
-  background-color: black;
-  color: #f2e5d7;
+  background-color: var(--primary-color);
+  color: var(--dark);
   text-decoration: underline;
   transition: all 0.5s ease-out;
+  border-color: var(--primary-color);
 }
 .productCards {
   display: grid;

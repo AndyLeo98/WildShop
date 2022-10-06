@@ -63,6 +63,7 @@ body {
 .shopProduct {
   padding: 0.25em;
   border: none;
+  border-radius: 5px;
   background-color: var(--dark);
   color: var(--primary-color);
   padding: 10px;
