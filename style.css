@@ -485,6 +485,7 @@ i:hover {
   .footer {
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 3em;
   }
 }
 
