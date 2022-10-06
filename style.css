@@ -523,82 +523,82 @@ i:hover {
 
 /*ABOUT PAGE*/
 
+.aboutContainer {
+  display: flex;
+}
+
 .split-left {
   display: flex;
   flex-direction: column;
   width: 60%;
   float: left;
   align-items: center;
-  }
-    
-  
-  .split-right {
+}
+
+.split-right {
   display: flex;
   flex-direction: column;
   width: 40%;
-  float: right;
+  /* float: right; */
   justify-content: center;
-  }
-  
-  .about-img {
+  align-items: center;
+}
+
+.about-img {
+  /* display: flex; */
+  width: 60%;
+  border-radius: 2%;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  margin-bottom: 3rem;
+}
+
+h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+.about-text {
+  padding: 35px 0;
+  text-align: justify;
+  margin-right: 70px;
+  line-height: 1.5;
+}
+
+.split-right hr {
+  background: #ff523b;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  transform: translateX(125%);
+  /* align-items: right; */
+}
+
+/*MEDIA QUERIES FOR ABOUT PAGE*/
+
+@media screen and (max-width: 768px) {
+  .aboutContainer {
     display: flex;
-    width: 60%;
-    border-radius: 2%;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
   }
-  
-  h2 {
-    text-align: center;
-    padding: 10px;
-    font-size: 50px;
-    margin-bottom: 25px;
+  .split-left {
+    width: 100%;
   }
-  
-  
-  p {
-    padding: 35px 0;
-    text-align: justify;
-    margin-right: 70px;
-    line-height: 1.5;
-  
-  
+  .split-right {
+    width: 100%;
   }
-  
-  hr {
-    background: #ff523b;
-    width: 80px;
-    height: 5px;
-    border-radius: 5px;
-    transform: translateX(125%);
-    align-items: right;
+  .about-img {
+    width: 80%;
+    margin-bottom: 0;
   }
-  
-  /*MEDIA QUERIES FOR ABOUT PAGE*/
-  
-  @media screen and (max-width:768px) {
-    .aboutContainer {
-      display: flex;
-      flex-direction: column;
-    }
-    .split-left{
-      width: 100%;
-  
-    }
-    .split-right{
-      width: 100%;
-  
-    }
-    .about-img {
-      width: 80%;
-    }
-  
-    p {
+
+  .about-text {
     margin: 10%;
-    }
   }
+}
 
-
-  /* CART SECTION MEDIA QUERY FOR DESKTOP*/
+/* CART SECTION MEDIA QUERY FOR DESKTOP*/
 @media only screen and (min-width: 768px) {
   .cart-collection {
     margin: 0 9rem;
@@ -637,5 +637,3 @@ i:hover {
     padding: 1.2rem 0;
   }
 }
-  
-  
