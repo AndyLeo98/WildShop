@@ -132,11 +132,11 @@ switch (productsList) {
     }
     filterObject(products, "category", "accessories");
     break;
-  case "coats":
+  case "shoes":
     while (productCards.firstChild) {
       productCards.removeChild(productCard.firstChild);
     }
-    filterObject(products, "category", "coats");
+    filterObject(products, "category", "shoes");
     break;
   case "bottoms":
     while (productCards.firstChild) {
