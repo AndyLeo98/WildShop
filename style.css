@@ -205,6 +205,180 @@ li {
   color: var(--dark);
 }
 
+/* CART SECTION MOBILE*/
+
+.product-cart {
+  min-height: 80vh;
+  width: 100%;
+}
+
+.page-banner-sm {
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: var(--secondary-font);
+  text-align: center;
+  color: var(--light);
+  background: var(--dark);
+  padding: 1rem;
+}
+
+.cart-collection {
+  margin-top: 0rem;
+}
+
+.cart-item form {
+  display: grid;
+  grid-template-columns: 100%;
+  border-bottom: 1px solid #eef1f6;
+  margin-bottom: 1rem;
+  margin-top: 1.2rem;
+  border-radius: 7px 7px 0px 0px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.cart-product {
+  display: grid;
+  grid-template-columns: 80px auto;
+  grid-gap: 0rem 1.5rem;
+  padding: 1rem 1rem;
+  /* border-bottom: 1px solid #eef1f6; */
+}
+
+.cart-image {
+  height: 80px;
+  border-radius: 7px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cart-quantity-md,
+.cart-unit-price,
+.cart-product-total {
+  display: none;
+}
+
+.cart-control-sm {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.8rem;
+}
+
+.remove {
+  font-weight: bold;
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+  color: var(--dark);
+  margin-left: 0.8rem;
+}
+
+.ti-trash {
+  cursor: pointer;
+}
+
+.cart-quantity-controls-sm {
+  display: flex;
+  margin-right: 0.6rem;
+}
+
+.cart-quantity-controls-sm button,
+.cart-quantity-controls-sm input {
+  -webkit-appearance: none;
+  height: 25px;
+  width: 25px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-left: 0.1rem;
+  cursor: pointer;
+}
+
+.cart-quantity-controls-sm input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.cart-quantity-controls-sm input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.cart-quantity-controls-sm button {
+  background-color: var(--primary-color);
+}
+
+.cart-product-name {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  font-family: var(--secondary-font);
+}
+
+.cart-price-sm {
+  color: #f1415b;
+  font-weight: bold;
+  font-family: var(--secondary-font);
+  margin-bottom: 0.3rem;
+}
+
+.cart-product-info small {
+  font-weight: bold;
+  font-family: var(--secondary-font);
+}
+
+.cart-total-holder {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.cart-total {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-total p {
+  font-weight: bold;
+  font-family: var(--secondary-font);
+}
+
+.cart-action-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-action-button a {
+  display: block;
+  cursor: pointer;
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  text-align: center;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.cart-action-button a:first-child {
+  order: 1;
+  background-color: #f1415b;
+  color: var(--light);
+}
+
+.cart-action-button a:last-child {
+  order: 2;
+  background-color: var(--dark);
+  transition: background 0.5s;
+  color: var(--light);
+}
+
+.cart-action-button a:last-child:hover {
+  background: var(--primary-color);
+  color: var(--dark);
+}
+
 /* VIDEO */
 .mobileLandingVideo {
   position: fixed;
@@ -345,5 +519,45 @@ i:hover {
   .btn {
     padding: 1.5rem;
     font-size: 1.2rem;
+  }
+}
+
+/* CART SECTION MEDIA QUERY FOR DESKTOP*/
+@media only screen and (min-width: 768px) {
+  .cart-collection {
+    margin: 0 9rem;
+  }
+  .page-banner-sm {
+    font-size: 2rem;
+    padding: 1.7rem;
+  }
+  .cart-image {
+    min-height: 180px;
+    width: 160px;
+  }
+  .cart-product-info {
+    margin-left: 5rem;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+  }
+  .cart-quantity-controls-sm button,
+  .cart-quantity-controls-sm input {
+    font-size: 1.5rem;
+  }
+  .cart-total-holder {
+    margin: 9rem;
+  }
+  cart-action-button a {
+    max-width: 4rem;
+  }
+  .cart-control-sm {
+    padding: 1.5rem;
+  }
+  .cart-total p {
+    font-size: 1.2rem;
+  }
+  .cart-action-button a {
+    font-size: 1.1rem;
+    padding: 1.2rem 0;
   }
 }
