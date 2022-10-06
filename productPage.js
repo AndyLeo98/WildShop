@@ -48,6 +48,9 @@ function createProductCards(id, imageUrl, title, price, description) {
   const shopProduct = document.createElement("button");
   shopProduct.classList.add("shopProduct");
   shopProduct.innerHTML = "Buy";
+  shopProduct.addEventListener("click", function sendToCartPage() {
+    window.location.href = "cart.html";
+  });
   productBody.appendChild(shopProduct);
 }
 
