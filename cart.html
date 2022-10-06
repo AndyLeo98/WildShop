@@ -41,10 +41,10 @@
             <a href="#about" class="nav__link">About</a>
           </li>
           <li class="nav__item">
-            <a href="cart.html" class="nav__link">Cart</a>
+            <a href="#cart" class="nav__link">Cart</a>
           </li>
           <li class="nav__item">
-            <a href="cart.html"
+            <a href="#"
               ><img src="/media/cart.png" alt="cart" width="30px" height="30px"
             /></a>
           </li>
@@ -52,13 +52,64 @@
       </nav>
     </header>
 
-    <!-- HOME PAGE COVER IMAGE -->
-    <section class="landing">
-      <div class="cover">
-        <h1>New Collection 2023!</h1>
-        <a href="#" class="btn">Explore Now &#8594;</a>
+    <!-- CART SECTION -->
+    <main>
+      <section class="page-banner bg-secondary">
+        <div class="wrapper page-banner-desc">
+          <h1>Shopping Cart</h1>
+          <div><span class="text-main">Home</span> / <span>Cart</span></div>
+        </div>
+      </section>
+
+      <div class="product-cart">
+        <h4 class="page-banner-sm">Cart</h4>
+        <div class="wrapper">
+          <div class="cart-collection">
+            <div class="cart-item">
+              <form action="">
+                <div class="cart-product">
+                  <div
+                    class="cart-image"
+                    style="
+                      background-image: url(media/alex-haigh-fEt6Wd4t4j0-unsplash.jpg);
+                    "
+                  ></div>
+                  <div class="cart-product-info">
+                    <p class="cart-product-name">Printed T-Shirt</p>
+                    <p class="cart-price-sm">$1,250</p>
+                    <small>x 1</small>
+                  </div>
+                </div>
+                <div class="cart-quantity-md">
+                  <div class="cart-quantity-controls">
+                    <button>-</button>
+                    <input type="number" value="1" readonly />
+                    <button>+</button>
+                  </div>
+                </div>
+                <div class="cart-unit-price">
+                  <h4>$1,250</h4>
+                </div>
+                <div class="cart-product-total">
+                  <h4>$1,250</h4>
+                </div>
+                <div class="cart-control-sm">
+                  <div class="remove">
+                    <span class="ti-trash"> Remove</span>
+                  </div>
+                  <div class="cart-quantity-controls-sm">
+                    <button>-</button>
+                    <input type="number" value="1" readonly />
+                    <button>+</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </main>
+
     <!-- FOOTER -->
     <footer class="footer">
       <p>
