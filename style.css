@@ -56,6 +56,7 @@ body {
   background-color: var(--primary-color);
   min-height: 8vh;
   width: 100%;
+  /* position: fixed; */
 }
 
 .nav__toggle {
@@ -89,12 +90,15 @@ svg {
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-  /* margin: 1rem; */
   padding: 1rem;
 }
 
 .nav__menu div {
   margin-right: auto;
+}
+
+.nav__menu img {
+  display: none;
 }
 
 li {
@@ -106,6 +110,7 @@ li {
   text-decoration: none;
   color: inherit;
   font-size: 1.2rem;
+  font-weight: 500;
   font-family: var(--secondary-font);
   letter-spacing: 0.1rem;
 }
@@ -130,40 +135,74 @@ li {
   color: var(--dark);
   font-family: var(--logo-font);
   letter-spacing: 3px;
+  transition: 0.5s ease-out;
 }
 
-/* MEDIA QUERY FOR DESKTOP */
-@media only screen and (min-width: 768px) {
-  .nav__toggle {
-    display: none;
-  }
-  .nav__menu {
-    flex-direction: row;
-    position: relative;
-  }
-  li {
-    display: block;
-  }
-  .logo a {
-    font-size: 3rem;
-  }
-  .landing h1 {
-    font-size: 2.5rem;
-  }
+.logo a:hover {
+  color: #f1415b;
+  transition: 0.5s ease-in;
 }
+
+.nav__link {
+  transition: 0.5s ease-out;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+  transition: 0.5s ease-in;
+}
+
 /* COVER PAGE IMAGE  */
 
 .landing {
-  height: 90vh;
+  background-image: url("media/pexels-george-shervashidze-1135531-min.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--dark);
 }
 
-.landing h1 {
-  font-size: 3.5rem;
+.cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cover h1 {
+  display: inline-block;
+  font-size: 1.5rem;
   font-family: var(--primary-font);
-  margin: 100px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+  background-color: var(--light);
+  padding: 0.4em;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+  display: inline-block;
+  background: var(--dark);
+  text-align: center;
+  color: var(--light);
+  font-size: 0.9rem;
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  padding: 1em;
+  transition: background 0.5s;
+}
+
+.btn:hover {
+  background: var(--primary-color);
+  color: var(--dark);
 }
 
 /* VIDEO */
@@ -206,7 +245,7 @@ li {
   box-shadow: 2px 3px 4px 0px #753f5f;
 }
 /*MEDIA QUERIES FOR THE LANDING PAGE*/
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .mobileLandingVideo {
     display: none;
   }
@@ -225,40 +264,86 @@ li {
 /* FOOTER */
 
 .footer {
-  font-size: 20px;
+  font-size: 1rem;
+  font-family: var(--secondary-font);
   width: 100%;
   padding: 15px;
-  background-color: #f2e5d7;
+  background-color: var(--primary-color);
   color: black;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: fixed;
-  bottom: 0;
 }
 
 .footer li {
   list-style-type: none;
   text-align: center;
-  display: inline;
+  display: inline-block;
 }
 
 i {
   padding: 10px;
-  color: black;
+  color: var(--dark);
+  font-size: 20px;
+  transition: 0.5s ease-out;
+}
+
+i:hover {
+  color: #f1415b;
+  transition: 0.5s ease-in;
 }
 
 .copyright {
   align-items: center;
-  font-size: 18px;
-  }
+  font-size: 0.8rem;
+}
 .contactEmail {
   text-decoration: none;
-  color: black;
- }
+  color: var(--dark);
+  transition: 0.5s ease-out;
+}
 
- @media screen and (max-width: 600px) { 
-  .footer { 
-    flex-direction: column; 
-  } 
+.contactEmail:hover {
+  color: #f1415b;
+  transition: 0.5s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+/* HOME PAGE MEDIA QUERY FOR DESKTOP */
+@media only screen and (min-width: 768px) {
+  .nav__toggle {
+    display: none;
+  }
+  .nav__menu {
+    flex-direction: row;
+    position: relative;
+  }
+  .nav__menu img {
+    display: block;
+    cursor: pointer;
+  }
+  li {
+    display: block;
+  }
+  .logo a {
+    font-size: 3rem;
+  }
+
+  .cover h1 {
+    margin-left: 6.25rem;
+    margin-right: 2rem;
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
+  }
+
+  .btn {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+  }
 }
