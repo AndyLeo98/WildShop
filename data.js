@@ -3,7 +3,7 @@ const products = [
   {
     id: 1,
     image:
-      "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "T-shirt",
     category: "tops",
     price: "10€",
@@ -13,7 +13,7 @@ const products = [
   {
     id: 2,
     image:
-      "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.unsplash.com/photo-1638394440667-aa54a7c0a703?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
     title: "Pants",
     category: "bottoms",
     price: 15,

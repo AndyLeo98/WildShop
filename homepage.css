@@ -1,15 +1,33 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  /* COLOR VARIABLES */
+  --primary-color: #f2e5d7;
+  --secondary-color: ;
+  --light: #f8f7f9;
+  --dark: #091540;
+
+  /* FONT */
+  --primary-font: Stardom;
+  --secondary-font: Montserrat;
+  --logo-font: ClashDisplay;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+}
+body {
+  font-family: var(--secondary-font);
+}
 .productSection {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 .filterSection {
-  display: flex;
-  justify-content: space-around;
-  margin: 2em 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  margin: 1em auto;
 }
 .filterButton {
   background-color: #f2e5d7;
@@ -18,8 +36,9 @@
   cursor: pointer;
   color: black;
   font-size: 12px;
-  width: 6em;
+  width: 7em;
   padding: 0.5em;
+  font-family: var(--secondary-font);
 }
 .filterButton:hover {
   background-color: black;
@@ -90,6 +109,15 @@
   transition: 0.3s;
 }
 @media screen and (min-width: 1024px) {
+  .filterSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 3em 2em;
+  }
+  .filterButton {
+    font-size: 1.15rem;
+    width: 10em;
+  }
   .productCards {
     grid-template-columns: repeat(4, 1fr);
     margin: 0 2em;
@@ -102,10 +130,7 @@
     /*height: 50vh;
     width: 25vw;*/
   }
-  .filterButton {
-    font-size: 1.15rem;
-    width: 10em;
-  }
+
   .productTitle {
     font-size: 1.5rem;
   }
