@@ -3,8 +3,9 @@
 const products = [
   {
     id: 1,
-    image: "https://placekitten.com/200/179",
-    title: "T-shirt rosa",
+    image:
+      "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "T-shirt",
     category: "T-shirts",
     price: "10€",
     description:
@@ -73,12 +74,12 @@ function createProductCards(id, imageUrl, title, price, description) {
   productBody.classList.add("productBody");
   productCard.appendChild(productBody);
   //Create the productTitle h2, add a class and add it to productBody div
-  const productTitle = document.createElement("h2");
+  const productTitle = document.createElement("p");
   productTitle.classList.add("productTitle");
   productTitle.innerHTML = title;
   productBody.appendChild(productTitle);
   //Create the productPrice h3, add a class and add it to productBody div
-  const productPrice = document.createElement("h3");
+  const productPrice = document.createElement("p");
   productPrice.classList.add("productPrice");
   productPrice.innerHTML = price;
   productBody.appendChild(productPrice);
