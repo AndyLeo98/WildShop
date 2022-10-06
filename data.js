@@ -5,7 +5,7 @@ const products = [
     image:
       "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "T-shirt",
-    category: "T-shirts",
+    category: "tops",
     price: "10€",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe perspiciatis voluptatem quisquam? Vel aliquam sed dolorem recusandae. Id enim nihil, quis vero tenetur reiciendis! Rerum quod molestiae debitis nostrum!",
@@ -15,7 +15,7 @@ const products = [
     image:
       "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Pants",
-    category: "Pants",
+    category: "bottoms",
     price: 15,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe perspiciatis voluptatem quisquam? Vel aliquam sed dolorem recusandae. Id enim nihil, quis vero tenetur reiciendis! Rerum quod molestiae debitis nostrum!",
@@ -25,7 +25,7 @@ const products = [
     image:
       "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Coat",
-    category: "Coats",
+    category: "tops",
     price: 20,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe perspiciatis voluptatem quisquam? Vel aliquam sed dolorem recusandae. Id enim nihil, quis vero tenetur reiciendis! Rerum quod molestiae debitis nostrum!",
@@ -35,7 +35,7 @@ const products = [
     image:
       "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Belt",
-    category: "Accessories",
+    category: "accessories",
     price: 5,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe perspiciatis voluptatem quisquam? Vel aliquam sed dolorem recusandae. Id enim nihil, quis vero tenetur reiciendis! Rerum quod molestiae debitis nostrum!",
@@ -45,7 +45,7 @@ const products = [
     image:
       "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Hat",
-    category: "Accessories",
+    category: "accessories",
     price: 10,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe perspiciatis voluptatem quisquam? Vel aliquam sed dolorem recusandae. Id enim nihil, quis vero tenetur reiciendis! Rerum quod molestiae debitis nostrum!",

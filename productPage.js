@@ -4,10 +4,13 @@
 
 import products from "./data.js";
 // localStorage.setItem("productsList", "all");
+let detail = localStorage.getItem("detail");
 
+console.log("detail", parseInt(detail));
 const productCards = document.querySelector(".productCards");
 
 /// Create the function to create the cards
+
 function createProductCards(id, imageUrl, title, price, description) {
   //Create the productCard div, add a class and add it to the productCards div
   const productCard = document.createElement("div");
@@ -47,73 +50,17 @@ function createProductCards(id, imageUrl, title, price, description) {
   shopProduct.innerHTML = "Buy";
   productBody.appendChild(shopProduct);
 }
-// function to filter
-function filterObject(array, key, value) {
-  for (let i = 0; i < array.length; i++) {
-    if (array[i][key] === value) {
-      createProductCards(
-        products[i].id,
-        products[i].image,
-        products[i].title,
-        products[i].price,
-        products[i].description
-      );
-    }
+
+for (let i = 0; i < products.length; i++) {
+  if (products[i].id === parseInt(detail)) {
+    createProductCards(
+      products[i].id,
+      products[i].image,
+      products[i].title,
+      products[i].price,
+      products[i].description
+    );
   }
-}
-/// LOCAL STORAGE
-let productsList = localStorage.getItem("productsList");
-const productCard = document.querySelector(".productCard");
-switch (productsList) {
-  case "Accessories":
-    while (productCards.firstChild) {
-      productCards.removeChild(productCard.firstChild);
-    }
-    filterObject(products, "category", "Accessories");
-    break;
-  case "Coats":
-    while (productCards.firstChild) {
-      productCards.removeChild(productCard.firstChild);
-    }
-    filterObject(products, "category", "Coats");
-    break;
-  case "Pants":
-    while (productCards.firstChild) {
-      productCards.removeChild(productCard.firstChild);
-    }
-    filterObject(products, "category", "Pants");
-    break;
-  case "T-shirts":
-    while (productCards.firstChild) {
-      productCards.removeChild(productCard.firstChild);
-    }
-    filterObject(products, "category", "T-shirts");
-    break;
-  case "all":
-    while (productCards.firstChild) {
-      productCards.removeChild(productCard.firstChild);
-    }
-    for (let i = 0; i < products.length; i++) {
-      createProductCards(
-        products[i].id,
-        products[i].image,
-        products[i].title,
-        products[i].price,
-        products[i].description
-      );
-    }
-    break;
-  default:
-    for (let i = 0; i < products.length; i++) {
-      createProductCards(
-        products[i].id,
-        products[i].image,
-        products[i].title,
-        products[i].price,
-        products[i].description
-      );
-    }
-    break;
 }
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
