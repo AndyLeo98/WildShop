@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* COLOR VARIABLES */
+  --primary-color: #f2e5d7;
+  --secondary-color: ;
+  --light: #f8f7f9;
+  --dark: #091540;
+
+  /* FONT */
+  --primary-font: Stardom;
+  --secondary-font: Montserrat;
+  --logo-font: ClashDisplay;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+}
+body {
+  font-family: var(--secondary-font);
+}
+.productCards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1em;
+}
+.productCard {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.productHeader {
+  display: flex;
+  justify-content: center;
+}
+.productImg {
+  height: 50vh;
+  width: 90%;
+  background-size: cover;
+  background-position: center;
+}
+.productBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50vh;
+  padding: 1em;
+}
+.productTitle,
+.productPrice {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.productDescription {
+  font-size: var(--normal-font-size);
+  text-align: justify;
+  line-height: 1.5;
+  margin: 2em 0;
+}
+.shopProduct {
+  padding: 0.25em;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--dark);
+  color: var(--primary-color);
+  padding: 10px;
+  font-weight: 900;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/*Media querie for Desktop*/
+@media screen and (min-width: 1024px) {
+  .productCards {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+  .productCard {
+    flex-direction: row;
+    width: 100%;
+  }
+  .productHeader {
+    align-items: center;
+    width: 50%;
+  }
+  .productImg {
+    height: 90vh;
+    width: 80%;
+  }
+  .productBody {
+    width: 50%;
+    height: 100%;
+    justify-content: normal;
+    padding: 0 2em;
+  }
+  .productTitle {
+    font-size: 1.5625rem;
+    font-weight: 700;
+    margin: 1em 0.5em 0;
+    padding-top: 1em;
+  }
+  .productPrice {
+    font-size: 1.2125rem;
+    font-weight: 700;
+    margin: 0 0.5em;
+  }
+  .productDescription {
+    font-size: 1.1em;
+    margin: 3em 0.5em;
+  }
+  .shopProduct {
+    margin: 32px 0;
+    width: 30%;
+    border-radius: 5px;
+  }
+  .shopProduct:hover {
+    background-color: var(--primary-color);
+    color: var(--dark);
+    text-decoration: underline;
+    transition: 0.3s;
+  }
+}
